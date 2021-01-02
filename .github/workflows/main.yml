@@ -33,4 +33,6 @@ jobs:
       - name: installing requirements
         run: |
            pip3 install -r requirements.txt
-      
+      - name: running the bot
+        run: |
+          python3 nikgappsbot.py
