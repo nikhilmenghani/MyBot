@@ -1,3 +1,6 @@
+#imports
+import os
+
 # The android version that we're targeting this application to run
 TARGET_ANDROID_VERSION = 11
 
@@ -31,7 +34,7 @@ CREATE_DEBLOATER_ZIP = True
 SIGN_ZIP = True
 
 # Bot's Token
-TOKEN = '819763043:AAFxeeQgKnmWY9eD_1qjkgGM7kRJ1CNCES4'
+TOKEN = os.environ.get("BOT_TOKEN")
 url = f'https://api.telegram.org/bot{TOKEN}/'
 
 # When Fresh Build is True, the installer will freshly build the zip (Comparatively Slower)
