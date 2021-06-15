@@ -9,5 +9,11 @@
   "repository": "https://github.com/nikhilmenghani/MyBot",
   "website": "https://t.me/iNikhilMenghani",
   "success_url": "https://null",
-  "stack": "container"
+  "stack": "container",
+   "env": {
+    "TOKEN": {
+      "description": "Telegram Bot Token",
+      "required": true
+    }
+  }
 }
