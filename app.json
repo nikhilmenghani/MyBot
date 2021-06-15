@@ -1,0 +1,13 @@
+{
+  "name": "Nikgapps Bot",
+  "description": "Frontend",
+  "keywords": [
+    "telegram",
+    "bot",
+    "linux",
+  ],
+  "repository": "https://github.com/nikhilmenghani/MyBot",
+  "website": "https://t.me/iNikhilMenghani",
+  "success_url": "https://null",
+  "stack": "container"
+}
