@@ -8,7 +8,7 @@
   ],
   "repository": "https://github.com/nikhilmenghani/MyBot",
   "website": "https://t.me/iNikhilMenghani",
-  "success_url": "https://null",
+  "success_url": "https://null.null",
   "stack": "container",
    "env": {
     "TOKEN": {
