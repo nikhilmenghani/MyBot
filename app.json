@@ -11,7 +11,7 @@
   "success_url": "https://null.null",
   "stack": "container",
    "env": {
-    "TOKEN": {
+    "BOT_TOKEN": {
       "description": "Telegram Bot Token",
       "required": true
     }
