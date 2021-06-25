@@ -1,1 +1,1 @@
-[here](https://heroku.com/deploy?template=https://github.com/nikhilmenghani/MyBot)
+[here](https://heroku.com/deploy?template=https://github.com/nikhilmenghani/MyBot/tree/main)
