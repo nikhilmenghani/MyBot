@@ -9,8 +9,8 @@ on:
   #envoirnment
 env:
   BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-  GitHubMail: ""
-  GitHubName: ""
+  GitHubMail: "nikhil@menghani.com"
+  GitHubName: "nikhilmenghani"
   
   
   # Allows you to run this workflow manually from the Actions tab
