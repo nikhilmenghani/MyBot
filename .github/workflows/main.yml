@@ -9,6 +9,10 @@ on:
   #envoirnment
 env:
   BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+  GitHubMail: ""
+  GitHubName: ""
+  
+  
   # Allows you to run this workflow manually from the Actions tab
 
 
@@ -27,11 +31,19 @@ jobs:
 
       - name: initialization
         run: |
-           git config --global user.name "ElytrA8"
-           git config --global user.email "manofuranium@gmail.com"             
+           git config --global user.email ${GitHubMail}
+           git config --global user.name ${GitHubName}
+           git config --global credential.helper store
+           echo "https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
+             
       - name: installing requirements
         run: |
            pip3 install -r requirements.txt
+
       - name: running the bot
         run: |
           python3 nikgappsbot.py
+
+      - name: loop
+        run: |
+          curl -X POST --header "Authorization: token ${{ secrets.GH_TOKEN }}" https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/main.yml/dispatches -d '{"ref":"main"}'
