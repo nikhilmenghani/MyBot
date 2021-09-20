@@ -41,6 +41,8 @@ jobs:
            pip3 install -r requirements.txt
 
       - name: running the bot
+        timeout-minutes: 300
+        continue-on-error: true
         run: |
           python3 nikgappsbot.py
 
