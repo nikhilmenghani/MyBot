@@ -48,4 +48,4 @@ jobs:
 
       - name: loop
         run: |
-          curl -X POST --header "Authorization: token ${{ secrets.GH_TOKEN }}" https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/main.yml/dispatches -d '{"ref":"main"}'
+          curl -X POST --header "Authorization: token ${{ secrets.GH_TOKEN }}" https://api.github.com/repos/${{ github.repository }}/actions/workflows/main.yml/dispatches -d '{"ref":"main"}'
